@@ -15,7 +15,10 @@ import com.employee_skill_management.employee.Repository.CompanyRepository;
 
 @RestController
 @RequestMapping("/employee-skill-management")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+	    "https://skillmanagement.infosharesystems.io",
+	    "https://api-skillmanagement.infosharesystems.io"
+	})
 public class CompanyController {
 
     @Autowired
